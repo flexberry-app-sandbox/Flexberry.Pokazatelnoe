@@ -1,0 +1,29 @@
+﻿{
+  "applicationCaption": "Pokazatelnoe",
+  "applicationTitle": "Pokazatelnoe",
+  "items": [
+    {
+      "link": null,
+      "menuName": "pokazatelnoe",
+      "caption": "Pokazatelnoe",
+      "title": "Pokazatelnoe",
+      "children": [
+        {
+          "link": "i-i-s-pokazatelnoe-здание-l",
+          "menuName": null,
+          "caption": "Здание",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-pokazatelnoe-город-l",
+          "menuName": null,
+          "caption": "Город",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

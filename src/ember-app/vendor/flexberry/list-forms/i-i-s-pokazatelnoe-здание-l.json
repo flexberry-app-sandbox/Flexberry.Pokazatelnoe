@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-pokazatelnoe-здание-e",
+  "editForm": "i-i-s-pokazatelnoe-здание-e",
+  "external": false,
+  "caption": "Здание",
+  "name": "IISPokazatelnoeЗданиеL",
+  "className": "ЗданиеL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-pokazatelnoe-здание",
+      "modelProjection": "ЗданиеL"
+    }
+  ]
+}

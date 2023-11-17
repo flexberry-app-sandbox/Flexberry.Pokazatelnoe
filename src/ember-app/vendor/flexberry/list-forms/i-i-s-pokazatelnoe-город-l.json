@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-pokazatelnoe-город-e",
+  "editForm": "i-i-s-pokazatelnoe-город-e",
+  "external": false,
+  "caption": "Город",
+  "name": "IISPokazatelnoeГородL",
+  "className": "ГородL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-pokazatelnoe-город",
+      "modelProjection": "ГородL"
+    }
+  ]
+}

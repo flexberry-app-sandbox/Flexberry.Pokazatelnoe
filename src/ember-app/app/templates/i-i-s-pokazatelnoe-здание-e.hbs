@@ -1,0 +1,65 @@
+<h3 class="ui header">{{t "forms.i-i-s-pokazatelnoe-здание-e.caption"}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button class="ui button save-button" {{action "save"}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button class="ui button save-del-button" {{action "delete"}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button class="ui button close-button" {{action "close"}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field flexberry-validationsummary-container">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
+    </div>
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.колвоЭтажей
+      class=(if (v-get validationModel "колвоЭтажей" "isInvalid") "error")
+      label=(t "forms.i-i-s-pokazatelnoe-здание-e.колвоЭтажей-caption")
+      data-test-i-i-s-pokazatelnoe-здание-e-колвоЭтажей=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "колвоЭтажей" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.номер
+      class=(if (v-get validationModel "номер" "isInvalid") "error")
+      label=(t "forms.i-i-s-pokazatelnoe-здание-e.номер-caption")
+      data-test-i-i-s-pokazatelnoe-здание-e-номер=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "номер" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-pokazatelnoe-здание-e.город-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.город
+      displayAttributeName="наименование"
+      autocomplete=true
+      relationName="город"
+      projection="ГородL"
+      title=(t "forms.i-i-s-pokazatelnoe-здание-e.город-caption")
+      readonly=readonly
+      componentName="городLookup"
+      class=(if (v-get validationModel "город" "isInvalid") "error")
+      data-test-i-i-s-pokazatelnoe-здание-e-город=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "город" "message")}}
+  </div>
+</form>

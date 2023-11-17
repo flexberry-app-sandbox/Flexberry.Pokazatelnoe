@@ -1,0 +1,75 @@
+﻿{
+  "name": "IISPokazatelnoeГород",
+  "modelName": "i-i-s-pokazatelnoe-город",
+  "className": "Город",
+  "nameSpace": "IIS.Pokazatelnoe",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "наименование",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "площадь",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ГородE",
+      "modelName": "i-i-s-pokazatelnoe-город",
+      "attrs": [
+        {
+          "name": "площадь",
+          "caption": "Площадь",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "наименование",
+          "caption": "Наименование",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "ГородL",
+      "modelName": "i-i-s-pokazatelnoe-город",
+      "attrs": [
+        {
+          "name": "площадь",
+          "caption": "Площадь",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "наименование",
+          "caption": "Наименование",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

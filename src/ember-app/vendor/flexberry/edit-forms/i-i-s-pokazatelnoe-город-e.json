@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Город",
+  "name": "IISPokazatelnoeГородE",
+  "className": "ГородE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-pokazatelnoe-город",
+      "modelProjection": "ГородE"
+    }
+  ]
+}
